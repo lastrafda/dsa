@@ -47,7 +47,7 @@ class ListClientExample<T> implements List<T>{
         }
     }
     size(): number {
-        throw new Error("Method not implemented.");
+        return this._size;
     }
     isEmpty(): boolean {
         throw new Error("Method not implemented.");

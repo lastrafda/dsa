@@ -23,7 +23,6 @@ class ListClientExample<T> implements List<T>{
     add(element: T, index?: number): boolean;
     add(element: T, index?: number): boolean {
         if (typeof index === 'number') {
-            console.log(`add(index= ${element}, element= ${index}): void;`);
             if (index === 0 && this._head !== null) {
                 this._head = new LinkedNode(element, this._head as LinkedNode<T>) as LinkedNode<T>;
             } else {
@@ -33,7 +32,6 @@ class ListClientExample<T> implements List<T>{
             this._size++
             return true
         } else {
-            console.log(`add(element= ${index}): void;`)
             if (this._head === null) {
                 this._head = new LinkedNode(element as T)
             } else {

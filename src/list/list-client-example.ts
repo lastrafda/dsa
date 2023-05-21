@@ -93,7 +93,6 @@ class ListClientExample<T> implements List<T>{
         let node = this._head;
         for (let i = 0; i < this._size; i++) {
             array[i] = node?.data as T;
-            // node = (node == null ? void 0 : node.next) ?? null;
             node = node?.next ?? null;
         }
         return array

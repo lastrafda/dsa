@@ -85,7 +85,8 @@ class ListClientExample<T> implements List<T>{
         throw new Error("Method not implemented.");
     }
     clear(): void {
-        throw new Error("Method not implemented.");
+        this._size = 0;
+        this._head = null;
     }
     toArray(): T[] {
         throw new Error("Method not implemented.");
